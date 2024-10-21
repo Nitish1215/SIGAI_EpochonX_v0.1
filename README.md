@@ -40,7 +40,7 @@ Aura is a Visual Studio Code extension that allows developers to seamlessly tran
 - Some languages may produce less accurate translations depending on Gemini API's support.
 
 ## Contribution:
-If you want to contribute or report an issue, feel free to open a pull request or issue on the [GitHub repository](https://github.com/).
+If you want to contribute or report an issue, feel free to open a pull request or issue on the [GitHub repository](https://github.com/Nitish1215/Aura).
 
 ---
 
