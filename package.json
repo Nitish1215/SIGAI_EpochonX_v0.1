@@ -1,0 +1,44 @@
+{
+  "name": "aura",
+  "displayName": "Aura",
+  "description": "Aura is a VS Code extension for translating code between languages using the Gemini API.",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.94.0"
+  },
+  "activationEvents": [
+    "onCommand:extension.translateCodeAura"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "extension.translateCodeAura",
+        "title": "Translate Code"
+      }
+    ],
+    "configuration": {
+      "type": "object",
+      "properties": {
+        "aura.apiKey": {
+          "type": "string",
+          "default": "",
+          "description": "The API key for the Gemini API."
+        }
+      }
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./"
+  },
+  "devDependencies": {
+    "@types/mocha": "^10.0.9",
+    "@types/vscode": "^1.94.0",
+    "typescript": "^5.6.2"
+  },
+  "dependencies": {
+    "@google/generative-ai": "^0.21.0"
+  }
+}
